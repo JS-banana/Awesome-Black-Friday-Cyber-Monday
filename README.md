@@ -1,6 +1,6 @@
 # Awesome Black Friday & Cyber Monday 优惠活动助手
 
-> 一个自动化数据管道和多语言 Web 应用，帮助你发现和管理黑色星期五/网络星期一的优惠活动。
+> 一个自动化数据管道和多语言 Web 应用，帮助你发现和管理黑色星期五的优惠活动。
 
 ## ✨ 项目特点
 
@@ -133,6 +133,33 @@ tsx scripts/export-zh-md.ts --help
 - ✅ 自动清理 ANSI 控制字符和换行符
 - ✅ 批处理 + 并发优化，快速完成大量翻译
 - ⚠️ 需定期人工抽检翻译质量
+
+## 🌐 部署到 Vercel
+
+### 快速部署（推荐）
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/JS-banana/Awesome-Black-Friday-Cyber-Monday)
+
+点击上方按钮，Vercel 会自动：
+1. Fork 这个仓库到你的 GitHub
+2. 配置项目设置
+3. 部署到生产环境
+
+### 手动配置
+
+**重要配置项：**
+- **Root Directory**: `apps/web`
+- **Build Command**: `cd ../.. && pnpm install && pnpm build --filter=web`
+- **Install Command**: `pnpm install`
+
+📖 详细部署指南请查看 [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+### 使用部署脚本
+
+```bash
+# 使用 Vercel CLI 部署
+./scripts/deploy.sh
+```
 
 ## 🎯 未来计划
 
