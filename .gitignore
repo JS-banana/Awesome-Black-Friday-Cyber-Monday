@@ -4,3 +4,5 @@ dist
 .env*
 apps/web/.next
 apps/web/node_modules
+.vercel
+.env*.local
