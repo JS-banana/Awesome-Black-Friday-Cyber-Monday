@@ -13,7 +13,7 @@ import type { Deal, DealsDataset } from '@awesome-bfcm/deals-schema';
 import type { Heading, Link, Table, TableCell } from 'mdast';
 
 const ROOT = path.resolve(process.cwd());
-const README_PATH = path.resolve(ROOT, 'README.md');
+const README_PATH = path.resolve(ROOT, 'README-origin.md');
 const DATA_DIR = path.resolve(ROOT, 'data');
 const CACHE_DIR = path.resolve(ROOT, '.cache');
 const OUTPUT_PATH = path.resolve(DATA_DIR, 'deals.en.json');
@@ -52,7 +52,7 @@ async function main() {
   const dataset: DealsDataset = {
     generatedAt: new Date().toISOString(),
     source: {
-      file: 'README.md',
+      file: 'README-origin.md',
       hash: sourceHash
     },
     total: deals.length,
