@@ -8,7 +8,8 @@
     "theme": "Theme",
     "viewAll": "View all",
     "filters": "Filters",
-    "clear": "Clear"
+    "clear": "Clear",
+    "github": "View on GitHub"
   },
   "search": {
     "title": "Search deals",

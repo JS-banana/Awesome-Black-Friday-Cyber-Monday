@@ -8,7 +8,8 @@
     "theme": "主题",
     "viewAll": "查看全部",
     "filters": "筛选",
-    "clear": "清除"
+    "clear": "清除",
+    "github": "在 GitHub 上查看"
   },
   "search": {
     "title": "搜索优惠",

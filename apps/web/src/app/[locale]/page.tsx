@@ -1,9 +1,11 @@
 import { unstable_setRequestLocale } from "next-intl/server";
+import { Github } from "lucide-react";
 
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { DealsExplorer } from "@/components/deals/deals-explorer";
 import { GlobalSearch } from "@/components/search/global-search";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { Button } from "@/components/ui/button";
 import type { Locale } from "@/i18n/routing";
 import { locales } from "@/i18n/routing";
 import { getCategoryTree, getDatasetMeta, getFeaturedDeals, getLocalizedDeals } from "@/lib/deals";
@@ -21,6 +23,7 @@ export default async function LocaleHomePage({ params }: PageComponentProps) {
   const messages = await loadMessages(resolvedLocale);
   const siteMessages = messages.site;
   const homeMessages = messages.home;
+  const actionsMessages = messages.actions;
 
   const deals = getLocalizedDeals(resolvedLocale);
   const featured = getFeaturedDeals(resolvedLocale);
@@ -60,6 +63,21 @@ export default async function LocaleHomePage({ params }: PageComponentProps) {
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-2">
+              <Button
+                variant="ghost"
+                size="icon"
+                asChild
+                title={actionsMessages.github}
+              >
+                <a
+                  href="https://github.com/JS-banana/Awesome-Black-Friday-Cyber-Monday"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={actionsMessages.github}
+                >
+                  <Github className="h-5 w-5" />
+                </a>
+              </Button>
               <LanguageSwitcher />
               <ThemeToggle />
             </div>
