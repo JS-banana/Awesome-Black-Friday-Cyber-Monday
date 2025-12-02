@@ -1,0 +1,47 @@
+{
+  "site": {
+    "title": "Awesome BFCM Deals",
+    "tagline": "Curated software discounts, now in English & Chinese"
+  },
+  "actions": {
+    "language": "Language",
+    "theme": "Theme",
+    "viewAll": "View all",
+    "filters": "Filters",
+    "clear": "Clear"
+  },
+  "search": {
+    "title": "Search deals",
+    "placeholder": "Search products, codes, or categories",
+    "empty": "No deals match your search.",
+    "shortcut": "⌘K to search",
+    "groupOther": "Other categories"
+  },
+  "categories": {
+    "all": "All categories",
+    "featured": "Featured",
+    "total": "{{count}} deals"
+  },
+  "deal": {
+    "code": "Code",
+    "expires": "Ends {{date}}",
+    "terms": "Terms",
+    "visit": "Visit site",
+    "discount": "Discount",
+    "category": "Category"
+  },
+  "home": {
+    "heroSubtitle": "Explore {count} curated software deals with bilingual details and instant filtering.",
+    "lastUpdated": "Last updated {date}",
+    "statTotal": "Total deals",
+    "statCategories": "Top level categories",
+    "statFeatured": "Featured picks",
+    "filtersTitle": "Filter by category",
+    "filterAll": "All",
+    "filterPlaceholder": "Filter within the current view...",
+    "resultsCount": "Showing {count} deals",
+    "empty": "No deals match your current filters.",
+    "tabAll": "All deals",
+    "tabFeatured": "Featured"
+  }
+}

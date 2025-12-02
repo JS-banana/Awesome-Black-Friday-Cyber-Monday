@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "moduleDetection": "force",
+    "allowImportingTsExtensions": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@awesome-bfcm/deals-schema": ["packages/deals-schema/src/index.ts"]
+    }
+  },
+  "include": ["scripts/**/*.ts", "packages/**/*.ts", "data/**/*.ts"]
+}

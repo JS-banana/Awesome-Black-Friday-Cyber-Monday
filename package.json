@@ -1,0 +1,51 @@
+{
+  "name": "awesome-black-friday-cyber-monday",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Tooling, data pipeline, and web UI for the Awesome Black Friday / Cyber Monday deals.",
+  "scripts": {
+    "dev": "npm run dev --workspace web",
+    "build": "npm run build --workspace web",
+    "start": "npm run start --workspace web",
+    "lint": "npm run lint --workspace web",
+    "extract:deals": "tsx scripts/extract-deals.ts",
+    "translate:deals": "tsx scripts/translate-deals.ts",
+    "export:zh-md": "tsx scripts/export-zh-md.ts",
+    "validate": "npm run lint --workspace web && npm run test --if-present --workspace web"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trungdq88/Awesome-Black-Friday-Cyber-Monday.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trungdq88/Awesome-Black-Friday-Cyber-Monday/issues"
+  },
+  "homepage": "https://github.com/trungdq88/Awesome-Black-Friday-Cyber-Monday#readme",
+  "dependencies": {
+    "@sindresorhus/slugify": "^2.2.1",
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.7",
+    "mdast-util-to-string": "^4.0.0",
+    "node-pty": "^1.0.0",
+    "p-limit": "^6.1.0",
+    "remark-gfm": "^4.0.0",
+    "remark-parse": "^11.0.0",
+    "unified": "^11.0.5",
+    "unist-util-visit": "^5.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/mdast": "^4.0.4",
+    "@types/node": "^22.9.0",
+    "@types/unist": "^3.0.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "packageManager": "pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748"
+}

@@ -1,0 +1,47 @@
+{
+  "site": {
+    "title": "精选黑五折扣",
+    "tagline": "所有软件优惠，一站式中英文浏览"
+  },
+  "actions": {
+    "language": "语言",
+    "theme": "主题",
+    "viewAll": "查看全部",
+    "filters": "筛选",
+    "clear": "清除"
+  },
+  "search": {
+    "title": "搜索优惠",
+    "placeholder": "搜索产品、折扣或分类",
+    "empty": "没有匹配的优惠。",
+    "shortcut": "按 ⌘K 搜索",
+    "groupOther": "其他分类"
+  },
+  "categories": {
+    "all": "全部分类",
+    "featured": "精选推荐",
+    "total": "共 {{count}} 条优惠"
+  },
+  "deal": {
+    "code": "优惠码",
+    "expires": "截止 {{date}}",
+    "terms": "条款",
+    "visit": "前往",
+    "discount": "折扣",
+    "category": "所属分类"
+  },
+  "home": {
+    "heroSubtitle": "一起浏览 {count} 条精选软件优惠，支持中英文信息与即时筛选。",
+    "lastUpdated": "最近更新：{date}",
+    "statTotal": "优惠总数",
+    "statCategories": "一级分类数量",
+    "statFeatured": "精选推荐",
+    "filtersTitle": "按分类筛选",
+    "filterAll": "全部",
+    "filterPlaceholder": "输入关键词进一步筛选...",
+    "resultsCount": "当前展示 {count} 条",
+    "empty": "没有符合当前筛选条件的优惠。",
+    "tabAll": "全部优惠",
+    "tabFeatured": "精选"
+  }
+}

@@ -1,0 +1,6 @@
+node_modules
+.cache
+dist
+.env*
+apps/web/.next
+apps/web/node_modules
